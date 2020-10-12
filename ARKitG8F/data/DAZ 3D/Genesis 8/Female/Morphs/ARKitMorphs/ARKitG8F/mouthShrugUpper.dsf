@@ -1,0 +1,67 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/ARKitMorphs/ARKitG8F/mouthShrugUpper.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "pgii",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2020-08-15T17:26:15Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "MouthShrugUpper",
+			"name" : "mouthShrugUpper",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Genesis8Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 1, 1, 1 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "mouthShrugUpper",
+				"label" : "ARKit mouthShrugUpper",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Mouth Jaw",
+			"formulas" : [
+				{
+					"output" : "Genesis8Female:/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose%20Head/eCTRLLipTopOut-In.dsf#eCTRLLipTopOut-In?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#MouthShrugUpper?value" },
+						{ "op" : "push", "val" : -0.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8Female:/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose%20Head/eCTRLLipTopUp-Down.dsf#eCTRLLipTopUp-Down?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#MouthShrugUpper?value" },
+						{ "op" : "push", "val" : 0.75 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "mouthShrugUpper",
+				"url" : "#MouthShrugUpper"
+			}
+		]
+	}
+}

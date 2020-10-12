@@ -1,0 +1,83 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/ARKitMorphs/ARKitG8F/mouthShrugLower.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "pgii",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2020-08-15T17:26:15Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "MouthShrugLower",
+			"name" : "mouthShrugLower",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Genesis8Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 1, 1, 1 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "mouthShrugLower",
+				"label" : "ARKit mouthShrugLower",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Mouth Jaw",
+			"formulas" : [
+				{
+					"output" : "Genesis8Female:/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose%20Head/eCTRLLipBottomOut-In.dsf#eCTRLLipBottomOut-In?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#MouthShrugLower?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8Female:/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose%20Head/eCTRLLipBottomUp-Down.dsf#eCTRLLipBottomUp-Down?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#MouthShrugLower?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "LipBelow:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#LipBelow?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#MouthShrugLower?value" },
+						{ "op" : "push", "val" : -0.0768 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Chin:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Chin?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#MouthShrugLower?value" },
+						{ "op" : "push", "val" : -0.0512 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "mouthShrugLower",
+				"url" : "#MouthShrugLower"
+			}
+		]
+	}
+}

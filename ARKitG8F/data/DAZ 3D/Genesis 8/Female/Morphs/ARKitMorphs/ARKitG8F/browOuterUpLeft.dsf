@@ -1,0 +1,227 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/ARKitMorphs/ARKitG8F/browOuterUpLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "pgii",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2020-08-15T17:26:15Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "BrowOuterUpLeft",
+			"name" : "browOuterUpLeft",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Genesis8Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 1, 1, 1 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "browOuterUpLeft",
+				"label" : "ARKit browOuterUpLeft",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Eyebrows Cheeks Nose",
+			"formulas" : [
+				{
+					"output" : "Genesis8Female:/data/DAZ%203D/Genesis%208/Female/Morphs/ARKitMorphs/ARKitG8F/Base/BaseBrowOuterUp-DownL.dsf#BaseBrowOuterUp-DownL?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 3 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "MidNoseBridge:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#MidNoseBridge?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.01678644 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidInner:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.0005970943 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperInner:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidUpperInner?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 8.977972e-05 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperInner:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidUpperInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.209013 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperInner:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidUpperInner?translation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : -0.007554723 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidTop:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidTop?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.2007835 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidTop:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidTop?translation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : -0.01807087 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperOuter:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidUpperOuter?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : -0.0002676966 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperOuter:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidUpperOuter?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.08994994 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperOuter:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidUpperOuter?translation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : -0.02078838 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidOuter:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidOuter?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 7.735931e-09 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidOuter:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidOuter?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.01807246 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidOuter:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lEyelidOuter?translation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : -2.499736e-10 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lSquintInner:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lSquintInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.2321588 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lSquintOuter:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lSquintOuter?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.1716012 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNostril:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lNostril?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.00601673 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNostril:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lNostril?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 0.08264325 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNostril:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lNostril?translation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : -0.013144065 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNostril:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lNostril?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : -2.3330975 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNostril:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lNostril?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : -0.08459475 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNostril:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lNostril?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#BrowOuterUpLeft?value" },
+						{ "op" : "push", "val" : 1.235217 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "browOuterUpLeft",
+				"url" : "#BrowOuterUpLeft"
+			}
+		]
+	}
+}

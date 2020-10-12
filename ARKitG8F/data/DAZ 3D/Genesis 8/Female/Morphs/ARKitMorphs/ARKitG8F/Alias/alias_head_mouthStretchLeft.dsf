@@ -1,0 +1,44 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/ARKitMorphs/ARKitG8F/Alias/alias_head_mouthStretchLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "pgii",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2020-08-15T17:26:15Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "MouthStretchLeft",
+			"name" : "mouthStretchLeft",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#head",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 1, 1, 1 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "alias",
+				"name" : "mouthStretchLeft",
+				"label" : "ARKit mouthStretchLeft",
+				"target_channel" : "Genesis8Female:/data/DAZ%203D/Genesis%208/Female/Morphs/ARKitMorphs/ARKitG8F/mouthStretchLeft.dsf#MouthStretchLeft?value"
+			},
+			"group" : "/Pose Controls/Head/Mouth Jaw"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "mouthStretchLeft",
+				"url" : "#MouthStretchLeft"
+			}
+		]
+	}
+}

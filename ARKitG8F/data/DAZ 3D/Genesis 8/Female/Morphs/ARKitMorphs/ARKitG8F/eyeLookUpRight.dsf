@@ -1,0 +1,59 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/ARKitMorphs/ARKitG8F/eyeLookUpRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "pgii",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2020-08-15T17:26:15Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "EyeLookUpRight",
+			"name" : "eyeLookUpRight",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Genesis8Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 1, 1, 1 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "eyeLookUpRight",
+				"label" : "ARKit eyeLookUpRight",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Eye",
+			"formulas" : [
+				{
+					"output" : "rEye:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rEye?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#EyeLookUpRight?value" },
+						{ "op" : "push", "val" : 16 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "eyeLookUpRight",
+				"url" : "#EyeLookUpRight"
+			}
+		]
+	}
+}
